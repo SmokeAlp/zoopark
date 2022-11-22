@@ -1,7 +1,5 @@
 # Животные не вакцинированы, не кормить, клетки не открывать
 
-import random
-
 
 class Giraffe:
     # общее
@@ -19,54 +17,49 @@ class Giraffe:
         self.__age = a_age
         self.__isFeed = False
 
-    def eat_food(self, FoodType, FoodAmmount):
-        if FoodType in self.food:
+    def eat_food(self, foodtype, foodammount):
+        if foodtype in self.food:
             print('Ом-ном-ном')
-            if FoodAmmount >= self.eat:
+            if foodammount >= self.eat:
                 self.__isFeed = True
         else:
-            print('Я не буду', FoodType)
+            print('Я не буду', foodtype)
 
     def do_noize(self):
-        print(self.name, self.sound)
+        print(self.__name, self.sound)
 
     def play(self):
         print('Удовлетворённо', self.sound)
         
     @property
-    
-    def IsFeed:
+    def is_feed(self):
         return self.__isFeed
     
     @property
-    
-    def Age(self):
+    def age(self):
         return self.__age
 
     @property
-    
-    def Name(self):
+    def name(self):
         return self.__name
         
-    @Name.setter
-    
-    def Name(self, newName):
-        if newName is str:
-            self.__name = value
+    @name.setter
+    def name(self, newname):
+        if newname is str:
+            self.__name = newname
         else:
-            print('Надо нормальное имя!)
+            print('Надо нормальное имя!')
         
-    @Age.setter
-    
-    def Age(self, value):
+    @age.setter
+    def age(self, value):
         if value is int:
             if value >= 0:
                 self.__age = value
             else:
                 print('Я живой')
 
-class Horse:
 
+class Horse:
     # общее
     animal_type = 'лошадь'
     biom = 'степь'
@@ -80,12 +73,13 @@ class Horse:
         self.__name = a_name
         self.eat = a_eat
         self.__age = a_age
+        self.__isFeed = False
 
-    def eat_food(self, FoodType):
-        if FoodType in self.food:
+    def eat_food(self, foodtype):
+        if foodtype in self.food:
             print('Ом-ном-ном')
         else:
-            print('Я не буду', FoodType)
+            print('Я не буду', foodtype)
 
     def do_noize(self):
         print(self.sound)
@@ -94,39 +88,34 @@ class Horse:
         print('Удовлетворённо', self.sound)
         
     @property
-    
-    def IsFeed:
+    def isfeed(self):
         return self.__isFeed
     
     @property
-    
-    def Age(self):
+    def age(self):
         return self.__age
 
     @property
-    
-    def Name(self):
+    def name(self):
         return self.__name
         
-    @Name.setter
-    
-    def Name(self, newName):
-        if newName is str:
-            self.__name = value
+    @name.setter
+    def name(self, newname):
+        if newname is str:
+            self.__name = newname
         else:
-            print('Надо нормальное имя!)
-        
-    @Age.setter
-    
-    def Age(self, value):
+            print('Надо нормальное имя!')
+
+    @age.setter
+    def age(self, value):
         if value is int:
             if value >= 0:
                 self.__age = value
             else:
                 print('Я живой')
 
-class Bear:
 
+class Bear:
     # общее
     animal_type = 'медвед'
     biom = 'Тайга'
@@ -140,12 +129,13 @@ class Bear:
         self.__name = a_name
         self.eat = a_eat
         self.__age = a_age
+        self.__isFeed = False
 
-    def eat_food(self, FoodType):
-        if FoodType in self.food:
+    def eat_food(self, foodtype):
+        if foodtype in self.food:
             print('Ом-ном-ном')
         else:
-            print('Я не буду', FoodType)
+            print('Я не буду', foodtype)
 
     def do_noize(self):
         print(self.sound)
@@ -154,31 +144,26 @@ class Bear:
         print('Удовлетворённо', self.sound)
         
     @property
-    
-    def IsFeed:
+    def isfeed(self):
         return self.__isFeed
     
     @property
-    
-    def Age(self):
+    def age(self):
         return self.__age
 
     @property
-    
-    def Name(self):
+    def name(self):
         return self.__name
         
-    @Name.setter
-    
-    def Name(self, newName):
-        if newName is str:
-            self.__name = value
+    @name.setter
+    def name(self, newname):
+        if newname is str:
+            self.__name = newname
         else:
-            print('Надо нормальное имя!)
+            print('Надо нормальное имя!')
         
-    @Age.setter
-    
-    def Age(self, value):
+    @age.setter
+    def age(self, value):
         if value is int:
             if value >= 0:
                 self.__age = value
