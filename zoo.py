@@ -16,11 +16,14 @@ class Giraffe:
         # конкретное
         self.__name = a_name
         self.eat = a_eat
-        self.__age = a_age, 
+        self.__age = a_age
+        self.__isFeed = False
 
-    def eat_food(self, FoodType):
+    def eat_food(self, FoodType, FoodAmmount):
         if FoodType in self.food:
             print('Ом-ном-ном')
+            if FoodAmmount >= self.eat:
+                self.__isFeed = True
         else:
             print('Я не буду', FoodType)
 
@@ -30,6 +33,29 @@ class Giraffe:
     def play(self):
         print('Удовлетворённо', self.sound)
         
+    @property
+    
+    def IsFeed:
+        return self.__isFeed
+    
+    @property
+    
+    def Age(self):
+        return self.__age
+
+    @property
+    
+    def Name(self):
+        return self.__name
+        
+    @Name.setter
+    
+    def Name(self, newName):
+        if newName is str:
+            self.__name = value
+        else:
+            print('Надо нормальное имя!)
+        
     @Age.setter
     
     def Age(self, value):
@@ -38,14 +64,6 @@ class Giraffe:
                 self.__age = value
             else:
                 print('Я живой')
-    
-    @property
-    
-    def Age(self):
-        return self.__age
-
-    def Name(self):
-        return self.__name
 
 class Horse:
 
@@ -75,6 +93,29 @@ class Horse:
     def play(self):
         print('Удовлетворённо', self.sound)
         
+    @property
+    
+    def IsFeed:
+        return self.__isFeed
+    
+    @property
+    
+    def Age(self):
+        return self.__age
+
+    @property
+    
+    def Name(self):
+        return self.__name
+        
+    @Name.setter
+    
+    def Name(self, newName):
+        if newName is str:
+            self.__name = value
+        else:
+            print('Надо нормальное имя!)
+        
     @Age.setter
     
     def Age(self, value):
@@ -83,15 +124,6 @@ class Horse:
                 self.__age = value
             else:
                 print('Я живой')
-    
-    @property
-    
-    def Age(self):
-        return self.__age
-
-    def Name(self):
-        return self.__name
-
 
 class Bear:
 
@@ -121,6 +153,29 @@ class Bear:
     def play(self):
         print('Удовлетворённо', self.sound)
         
+    @property
+    
+    def IsFeed:
+        return self.__isFeed
+    
+    @property
+    
+    def Age(self):
+        return self.__age
+
+    @property
+    
+    def Name(self):
+        return self.__name
+        
+    @Name.setter
+    
+    def Name(self, newName):
+        if newName is str:
+            self.__name = value
+        else:
+            print('Надо нормальное имя!)
+        
     @Age.setter
     
     def Age(self, value):
@@ -129,11 +184,3 @@ class Bear:
                 self.__age = value
             else:
                 print('Я живой')
-    
-    @property
-    
-    def Age(self):
-        return self.__age
-
-    def Name(self):
-        return self.__name
