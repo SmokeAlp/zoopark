@@ -75,9 +75,11 @@ class Horse:
         self.__age = a_age
         self.__isFeed = False
 
-    def eat_food(self, foodtype):
+    def eat_food(self, foodtype, foodammount):
         if foodtype in self.food:
             print('Ом-ном-ном')
+            if foodammount >= self.eat:
+                self.__isFeed = True
         else:
             print('Я не буду', foodtype)
 
@@ -131,9 +133,11 @@ class Bear:
         self.__age = a_age
         self.__isFeed = False
 
-    def eat_food(self, foodtype):
+    def eat_food(self, foodtype, foodammount):
         if foodtype in self.food:
             print('Ом-ном-ном')
+            if foodammount >= self.eat:
+                self.__isFeed = True
         else:
             print('Я не буду', foodtype)
 
