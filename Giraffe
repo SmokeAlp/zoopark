@@ -36,7 +36,7 @@ class Giraffe:
         
     @age.setter
     def age(self, value):
-        if value is int:
+        if type(value) is int:
             if value >= 0:
                 self.__age = value
             else:
@@ -48,7 +48,7 @@ class Giraffe:
         
     @name.setter
     def name(self, newname):
-        if newname is str:
+        if type(newname) is str:
             self.__name = newname
         else:
             print('Надо нормальное имя!')
