@@ -3,7 +3,7 @@ class Bear:
     def __init__(self, name, eat_per_day, age):
         self.__animal_type = 'медвед'
         self.__biom = 'Тайга'
-        self.__territory = 6 #км2
+        self.__territory = 300 #м2
         self.__food = ['мясо', 'ягоды']
         self.__predator = 'всеядное'
         self.__sound = 'Ну буфета здесь нет наверное...'
