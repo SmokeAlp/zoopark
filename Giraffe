@@ -3,7 +3,7 @@ class Giraffe:
     def __init__(self, name, eat_per_day, age):
         self.__animal_type = 'жираф'
         self.__biom = 'саванна'
-        self.__territory = '100 км^2'
+        self.__territory = 75 #км2
         self.__food = ['кустарники', 'трава', 'фрукты']
         self.__predator = 'травоядное'
         self.__sound = 'руауавуагага(не слышно человеку)'
