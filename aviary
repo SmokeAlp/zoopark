@@ -1,4 +1,5 @@
 class aviary:
+
     def __init__(self, name, biom, territory):
         self.__aviary_name = name
         self.__biom = biom
@@ -11,7 +12,7 @@ class aviary:
         elif self.__territory < animal.territory:
             print(animal.name, 'не подселился, нехватает места.')
         else:
-            if self.__animals != []:
+            if len(self.__animals) != 0:
                 if self.__animals[1].predator != 'травоядное':
                     if animal.animal_type != self.__animals[1].animal_type:
                         print(animal.name, 'не подселился, соседи не подходят.')
