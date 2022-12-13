@@ -72,4 +72,3 @@ class Bear:
             self.__name = newname
         else:
             print('Надо нормальное имя!')
-            
