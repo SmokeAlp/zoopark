@@ -6,13 +6,14 @@ class aviary:
         self.__territory = territory
         self.__animals = []
 # разобраться с __ в свойствах животных
+
     def settle(self, animal):
         if self.__biom != animal.biom:
             print(animal.name, 'не подселился, не подходит биом.')
         elif self.__territory < animal.territory:
             print(animal.name, 'не подселился, нехватает места.')
         else:
-            if self.__animals != []:
+            if len(self.__animals) != 0:
                 if self.__animals[0].predator != 'травоядное':
                     if animal.animal_type != self.__animals[0].animal_type:
                         print(animal.name, 'не подселился, соседи не подходят.')
