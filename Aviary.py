@@ -1,4 +1,4 @@
-class aviary:
+class Aviary:
 
     def __init__(self, name, biom, territory):
         self.__aviary_name = name
