@@ -1,16 +1,16 @@
 from AnimalConstruct import *
 
 
-class Horse(AnimalConstruct):
-        
+class Wolf(AnimalConstruct):
+
     def __init__(self, name, eat_per_day, age):
         super().__init__(name, eat_per_day, age)
-        self.__animal_type = 'лошадь'
-        self.__biom = 'Степь'
+        self.__animal_type = 'волк'
+        self.__biom = 'Тундра'
         self.__territory = 200  # м2
-        self.__food = ['фрукты', 'трава']
-        self.__predator = 'травоядное'
-        self.__sound = 'Шевелись, Плотва'
+        self.__food = ['мясо']
+        self.__predator = 'хищник'
+        self.__sound = 'Вуф-Вуф'
         self.__isfeed = False
 
     def eat_food(self, foodtype, foodammount):

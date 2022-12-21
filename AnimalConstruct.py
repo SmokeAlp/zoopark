@@ -28,6 +28,7 @@ class AnimalConstruct:
     @name.setter
     def name(self, newname):
         if type(newname) is str:
+            print(self.__name, 'теперь', newname)
             self.__name = newname
         else:
             print('Надо нормальное имя!')
