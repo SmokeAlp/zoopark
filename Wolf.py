@@ -22,7 +22,7 @@ class Wolf(AnimalConstruct):
             print('Я не буду', foodtype)
 
     def do_noize(self):
-        print(self.__name, self.__sound)
+        print(self.name, self.__sound)
 
     def play(self):
         print(self.__name, 'Удовлетворённо', self.__sound)

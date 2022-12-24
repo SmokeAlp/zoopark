@@ -10,7 +10,7 @@ class Horse(AnimalConstruct):
         self.__territory = 200  # м2
         self.__food = ['фрукты', 'трава']
         self.__predator = 'травоядное'
-        self.__sound = 'Шевелись, Плотва'
+        self.__sound = 'Тыгыдык-тыгдык тыгыдык-тыгдык тыгыдык-тыгдык тыгыдык-тыгдык тыгыдык-тыгдык тыгыдык-тыгдык'
         self.__isfeed = False
 
     def eat_food(self, foodtype, foodammount):
@@ -22,7 +22,7 @@ class Horse(AnimalConstruct):
             print('Я не буду', foodtype)
 
     def do_noize(self):
-        print(self.__name, self.__sound)
+        print(self.name, self.__sound)
 
     def play(self):
         print(self.__name, 'Удовлетворённо', self.__sound)
